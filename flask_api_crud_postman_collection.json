@@ -1,0 +1,164 @@
+{
+    "info": {
+        "name": "Flask API CRUD Collection",
+        "_postman_id": "8c8c4f8c-ff0c-4850-8c32-6f8067d57f1d",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Ping",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://flask-production-5711.up.railway.app/ping",
+                    "host": [
+                        "flask-production-5711",
+                        "up",
+                        "railway",
+                        "app"
+                    ],
+                    "path": [
+                        "ping"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Data",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": \"1\", \"type\": \"leaf\", \"class\": 1, \"description\": \"Sample description\"}"
+                },
+                "url": {
+                    "raw": "https://flask-production-5711.up.railway.app/data",
+                    "host": [
+                        "flask-production-5711",
+                        "up",
+                        "railway",
+                        "app"
+                    ],
+                    "path": [
+                        "data"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Specific Data",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://flask-production-5711.up.railway.app/data/1",
+                    "host": [
+                        "flask-production-5711",
+                        "up",
+                        "railway",
+                        "app"
+                    ],
+                    "path": [
+                        "data",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get All Data",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://flask-production-5711.up.railway.app/data",
+                    "host": [
+                        "flask-production-5711",
+                        "up",
+                        "railway",
+                        "app"
+                    ],
+                    "path": [
+                        "data"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Update Data",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"type\": \"sheet\", \"class\": 2, \"description\": \"Updated description\"}"
+                },
+                "url": {
+                    "raw": "https://flask-production-5711.up.railway.app/data/1",
+                    "host": [
+                        "flask-production-5711",
+                        "up",
+                        "railway",
+                        "app"
+                    ],
+                    "path": [
+                        "data",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Delete Data",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "https://flask-production-5711.up.railway.app/data/1",
+                    "host": [
+                        "flask-production-5711",
+                        "up",
+                        "railway",
+                        "app"
+                    ],
+                    "path": [
+                        "data",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Data by Type and Class",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://flask-production-5711.up.railway.app/data/type/leaf/class/1",
+                    "host": [
+                        "flask-production-5711",
+                        "up",
+                        "railway",
+                        "app"
+                    ],
+                    "path": [
+                        "data",
+                        "type",
+                        "leaf",
+                        "class",
+                        "1"
+                    ]
+                }
+            }
+        }
+    ]
+}

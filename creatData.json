@@ -1,0 +1,78 @@
+{
+    "info": {
+        "name": "Create Data with Images",
+        "_postman_id": "8c8c4f8c-ff0c-4850-8c32-6f8067d57f1d",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create Data with Images",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "id",
+                            "value": "2",
+                            "type": "text"
+                        },
+                        {
+                            "key": "type",
+                            "value": "leaf",
+                            "type": "text"
+                        },
+                        {
+                            "key": "class",
+                            "value": "1",
+                            "type": "text"
+                        },
+                        {
+                            "key": "topic1",
+                            "value": "Sample Topic 1",
+                            "type": "text"
+                        },
+                        {
+                            "key": "description1",
+                            "value": "Sample Description 1",
+                            "type": "text"
+                        },
+                        {
+                            "key": "topic2",
+                            "value": "Sample Topic 2",
+                            "type": "text"
+                        },
+                        {
+                            "key": "description2",
+                            "value": "Sample Description 2",
+                            "type": "text"
+                        },
+                        {
+                            "key": "image1",
+                            "src": "/path/to/sample_image1.jpg",
+                            "type": "file"
+                        },
+                        {
+                            "key": "image2",
+                            "src": "/path/to/sample_image2.jpg",
+                            "type": "file"
+                        },
+                        {
+                            "key": "image3",
+                            "src": "/path/to/sample_image3.jpg",
+                            "type": "file"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://flask-production-5711.up.railway.app/data",
+                    "host": ["flask-production-5711", "up", "railway", "app"],
+                    "path": ["data"]
+                }
+            },
+            "response": []
+        }
+    ]
+}
