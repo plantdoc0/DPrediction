@@ -54,7 +54,7 @@ def ping():
 
 @app.route('/leaf_predict', methods=['POST'])
 def predict():
-    interpreter = load_model('2_best_leaf_model.tflite')
+    interpreter = load_model('3_best_leaf_model.tflite')
     if isinstance(interpreter, str):
         return jsonify({'error': interpreter}), 500
     
